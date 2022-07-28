@@ -32,10 +32,10 @@ body{
 }
 
 .header{
-    min-height: 100vh;
+    min-height: 66.3vh;
     background-image: url(../images/mobile/image-header.jpg);
     background-repeat: no-repeat;
-    background-position: center -300px;
+    background-size: contain;
 }
 
 .nav{
@@ -84,7 +84,7 @@ body{
 }
 
 .header--presentacion{
-    padding: 2rem 1.5rem;
+    padding: 4rem 1.5rem;
     color: var(--white);
     text-align: center;
 }
@@ -92,9 +92,11 @@ body{
 .header--titulo{
     font-family: 'Fraunces', serif;
     text-transform: uppercase;
-    letter-spacing: .5rem;
+    letter-spacing: .4rem;
     margin-bottom: 2rem;
-    line-height: 2.75rem;
+    line-height: 3.5rem;
+    font-size: 3rem;
+    font-weight: 10;
 }
 
 .header--arrow{
@@ -118,7 +120,7 @@ body{
 .section__about{
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: minmax(50vh , auto);
+    grid-auto-rows: minmax(40vh , auto);
 }
 
 .section--article__img-yellow{
@@ -136,25 +138,33 @@ body{
 }
 
 .section--article-info{
-    padding: 2.5rem 1rem;
+    padding: 3rem 3rem;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 2rem;
     color: var(--very-dark-grayish-blue);
 }
 
 .section--title{
     font-family:'Fraunces', serif;
-    font-weight: bold;
-    color: black;
-    font-size: 1.75rem;
+    font-weight: 900;
+    color:var(--very-dark-desaturated-blue);
+    font-size: 2.2rem;
 }
+
+.section--article-content{
+    color: var(--very-dark-grayish-blue);
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    font-weight: 900;
+}
+
 
 .section--link{
     font-family: 'Fraunces', serif;
-    font-weight: bold;
-    color: black;
+    font-weight: 900;
+    color: var(--very-dark-desaturated-blue);
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -168,6 +178,7 @@ body{
     margin-right: auto;
     border-radius: 10px;
     margin: -8px auto 0 auto;
+    opacity: 0.2;
 }
 
 .section--link__yellow::after{
@@ -181,7 +192,7 @@ body{
 .section--services{
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: minmax(50vh, auto);
+    grid-auto-rows: minmax(70vh, auto);
 
 }
 
@@ -190,7 +201,7 @@ body{
     background-size: cover;
     background-position: center top;
     text-align: center;
-    padding: 100% 1rem 2.5rem 1rem;
+    padding: 100% 1.5rem 2.5rem 1.5rem;
     color: var(--dark-blue);
 }
 
@@ -204,7 +215,26 @@ body{
 
 .section--services-title{
     font-family:'Fraunces', serif;
-    font-weight: bold;
+    font-weight: 900;
+    padding-bottom: 2rem;
+    color: #2C7566;
+}
+
+.section--services-title__photography{
+    color: var(--dark-blue);
+}
+
+.section--info{
+    line-height: 1.5rem;
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.section--info__graphic{
+    color: #2C7566;
+}
+.section--info__photography{
+    color: var(--dark-blue);
 }
 
 .section-clients{
@@ -214,18 +244,18 @@ body{
     align-items: center;
     text-align: center;
     justify-content: center;
-    padding: 4rem 1.5rem 0 1.5rem;
+    padding: 4rem 1.5rem 5rem 1.5rem;
 }
 
 .section-clients--article{
-    min-height: 50vh;
-    padding: 3rem 0;
+    min-height: 30vh;
+    padding: 3rem .6rem 0 .6rem;
 }
 
 .section-clients-title{
     font-size: 1rem;
     font-family:'Fraunces', serif;
-    font-weight: bold;
+    font-weight: 900;
     text-transform: uppercase;
     letter-spacing: .3rem;
     color: var(--grayish-blue);
@@ -241,11 +271,15 @@ body{
 .section-clients-testimonials{
     color: var(--dark-grayish-blue);
     margin-bottom: 1.5rem;
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    font-weight: 900;
 }
 
 .section-clients-name{
     font-family: 'Fraunces', serif ;
-    font-weight: bold;
+    font-weight: 900;
+    font-size: 1.1rem;
     color: var(--very-dark-desaturated-blue);
     margin-bottom: .5rem;
 }
@@ -290,6 +324,11 @@ body{
         background-size: cover;
     }
 
+    .header--titulo{
+        font-size: 3rem;
+        line-height: 5rem;
+    }
+
     .nav--menu{
         position: static;
         opacity: 1;
@@ -307,7 +346,7 @@ body{
     .section__about{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-auto-rows: minmax(100vh , auto);
+        grid-auto-rows: minmax(70vh , auto);
     }
     
     .section--article__img-yellow{
@@ -332,17 +371,17 @@ body{
         text-align: start;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        gap: 2rem;
         color: var(--very-dark-grayish-blue);
     }
     
     .section--title{
         font-family:'Fraunces', serif;
         font-weight: 850;
-        color: black;
-        font-size: 2rem;
+        color: var(--very-dark-desaturated-blue);
+        font-size: 2em;
     }
-    
+
     .section--link{
         font-family: 'Fraunces', serif;
         font-weight: bold;
@@ -374,7 +413,7 @@ body{
     .section--services{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-auto-rows: minmax(50vh, auto);
+        grid-auto-rows: minmax(40vh, auto);
     
     }
     
@@ -383,7 +422,7 @@ body{
         background-size: cover;
         background-position: center top;
         text-align: center;
-        padding: 100% 1rem 2.5rem 1rem;
+        padding: 50% 1rem 2.5rem 1rem;
         color: var(--dark-blue);
     }
     
