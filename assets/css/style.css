@@ -32,10 +32,11 @@ body{
 }
 
 .header{
-    min-height: 66.3vh;
+    min-height: 100vh;
     background-image: url(../images/mobile/image-header.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
 }
 
 .nav{
@@ -128,6 +129,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    min-height: 60vh;
 }
 
 .section--article__img-pink{
@@ -135,6 +137,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    min-height: 60vh;
 }
 
 .section--article-info{
