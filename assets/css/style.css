@@ -58,12 +58,28 @@ body{
     width: calc(100% - 3rem);
     right: 1.5rem;
     top: 105px;
-    padding: 1rem;
+    padding: 3rem 30%;
     text-align: center;
     left: -100%;
     opacity: 0;
     transition: all .5s linear;
     z-index: 30;
+    color: var(--very-dark-grayish-blue);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    font-size: 1.3rem;
+}
+
+.nav--contact{
+    background-color: var(--yellow) ;
+    color: black;
+    font-family: 'Fraunces', serif ;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border-radius: 1.5rem;
+    padding: 1rem 0;
 }
 
 .nav--menu::after{
@@ -192,6 +208,9 @@ body{
     background-color: var(--soft-red);
 }
 
+.section--link:hover::after{
+    opacity: 1;
+}
 .section--services{
     display: grid;
     grid-template-columns: 1fr;
@@ -317,6 +336,12 @@ body{
     padding: 0 1rem;
 }
 
+.footer--list-item:hover{
+    color: #fff;
+    cursor: pointer;
+    filter: brightness(600%);
+}
+
 @media screen and (min-width: 678px){
 
     .header{
@@ -331,15 +356,37 @@ body{
         font-size: 3rem;
         line-height: 5rem;
     }
+    .nav{
+        padding-top: 2rem;
+    }
 
     .nav--menu{
         position: static;
         opacity: 1;
         display: flex;
+        flex-direction:row ;
         background-color: transparent;
         color:white;
-        gap: 1rem;
+        gap: 3rem;
         padding: 0 1rem;
+        align-items: center;
+    }
+
+    .nav--contact{
+        background-color:white ;
+        padding: 1rem 1.5rem;
+        color: black;
+        font-family: 'Fraunces', serif ;
+        font-weight: bold;
+        font-size: .8rem;
+        text-transform: uppercase;
+        border-radius: 1.5rem;
+    }
+
+    .nav--contact:hover{
+        cursor: pointer;
+        color: #fff;
+        background:#6bd3fc ;
     }
 
     .input-label{
@@ -374,6 +421,7 @@ body{
         text-align: start;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         gap: 2rem;
         color: var(--very-dark-grayish-blue);
     }
@@ -402,7 +450,7 @@ body{
         margin-right: auto;
         border-radius: 10px;
         margin: -8px auto 0 -2px;
-        opacity: .3;
+        opacity: .2;
     }
     
     .section--link__yellow::after{
